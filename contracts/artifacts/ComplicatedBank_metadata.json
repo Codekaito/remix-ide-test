@@ -45,6 +45,24 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
@@ -84,11 +102,11 @@
 	},
 	"sources": {
 		"contracts/simpleBank.sol": {
-			"keccak256": "0x1f3026490b5e7704f26fbdfe54b6cc2f29ae2a22baff3ea0d349a58979b7dc2c",
+			"keccak256": "0x2f5d520e7cf37432df7f3d8751165c32b178f65eafaa0eb9246689cf22a237ae",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c0c26173d2566f0956ab9a834e1de13cffba25788433645807afbb2bd9ab1b03",
-				"dweb:/ipfs/QmSn4eFiKWp1JvGYZN4kzYSm5mtbAoncwRTWkNU1HpsRnv"
+				"bzz-raw://e34ae91d3bab83a8444678a8683b41e9b7c28e8a5ed6a704be7dbeef4370757b",
+				"dweb:/ipfs/QmXCrnd9D7eioS88Tt13fmrrFrPZn4RQWEpZRzFdyNymwk"
 			]
 		}
 	},
