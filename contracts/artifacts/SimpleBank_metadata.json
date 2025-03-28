@@ -1,31 +1,19 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.29+commit.ab55807c"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "getDeployerAddress",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "retrieve",
+				"name": "balances",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -37,16 +25,10 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "num",
-						"type": "uint256"
-					}
-				],
-				"name": "store",
+				"inputs": [],
+				"name": "deposit",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -63,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/1_Storage.sol": "Storage"
+			"contracts/simpleBank.sol": "SimpleBank"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -77,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/1_Storage.sol": {
-			"keccak256": "0x3cc4d51459b3430952740c428962fff2ec4380e83b9309192ff8d4d3915f9779",
+		"contracts/simpleBank.sol": {
+			"keccak256": "0x7804a547e6cc5adc2a4c67c3d8d294d58a5fcaee9f6e1c625683e08af5e6292f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2ed586c6ebc0b762d33afb52bbefcc114746bebf1c2c2e681ad36fd4aae786a3",
-				"dweb:/ipfs/QmXVVyL4ESmD2NdTFMrEz3JsJmLLYVuNcjTBbPT9kNhLKd"
+				"bzz-raw://093d07c64bef6028c04360191baf9629403defb27b923e639762c95d4b89cd4c",
+				"dweb:/ipfs/QmTqF6VqJR1ugvhfyh1ue55fPaNU5GWom7Soa3Xg5C7v5X"
 			]
 		}
 	},
