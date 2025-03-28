@@ -7,7 +7,21 @@ contract SimpleBank {
     // value: balance
     mapping(address => uint256) public balances;
 
-    function deposit() public payable { // payable identifica che é in grado di ricevere ether
+    error InvalidAmount(uint256 amount);
+
+    function deposit() external payable { // payable identifica che é in grado di ricevere ether
         balances[msg.sender] += msg.value;
     }
+
+    function withdraw(uint256 amount) external {
+        require(0 <amount && amount <= balances[msg.sender], InvalidAmount(amount));
+
+        balances[msg.sender] -= amount;
+        payable(msg.sender).transfer(amount);
+
+    }
+}
+
+contract ComplicatedBank is SimpleBank {
+
 }

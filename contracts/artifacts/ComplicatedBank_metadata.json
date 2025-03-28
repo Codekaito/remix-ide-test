@@ -69,7 +69,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/simpleBank.sol": "SimpleBank"
+			"contracts/simpleBank.sol": "ComplicatedBank"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
