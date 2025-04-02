@@ -11,16 +11,84 @@
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentUserBalance",
+						"type": "uint256"
 					}
 				],
 				"name": "InvalidAmount",
 				"type": "error"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Deposited",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrawn",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "user",
 						"type": "address"
 					}
 				],
@@ -28,7 +96,7 @@
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "balance",
 						"type": "uint256"
 					}
 				],
@@ -37,9 +105,61 @@
 			},
 			{
 				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "deposit",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -102,11 +222,11 @@
 	},
 	"sources": {
 		"contracts/simpleBank.sol": {
-			"keccak256": "0x2f5d520e7cf37432df7f3d8751165c32b178f65eafaa0eb9246689cf22a237ae",
+			"keccak256": "0xbd6e68a095b493b13baa5f764a8cfd637c2c216639769bde4fd68e31bbd20226",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e34ae91d3bab83a8444678a8683b41e9b7c28e8a5ed6a704be7dbeef4370757b",
-				"dweb:/ipfs/QmXCrnd9D7eioS88Tt13fmrrFrPZn4RQWEpZRzFdyNymwk"
+				"bzz-raw://77733f46f30c65ffbb6b3ea0ce6ad1387b9143a437abc796f29662456129e5e1",
+				"dweb:/ipfs/QmPHRfsLYcCjWh2SLQokFpPEThC7PUKTfWoECoJXPFE1Sk"
 			]
 		}
 	},
